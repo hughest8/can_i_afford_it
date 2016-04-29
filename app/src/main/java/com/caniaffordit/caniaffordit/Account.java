@@ -6,8 +6,9 @@ import android.database.sqlite.SQLiteOpenHelper;
  * Created by Tom on 26/04/2016.
  */
 public class Account {
-
-    //private variables
+// the following is the construction of a database class which was going to be used to operate a database.
+    // However the database was not completed in time, so this section wasn't used
+    //Setting the database variables
     int _id;
     String _item;
     int _value;
@@ -16,14 +17,14 @@ public class Account {
     public Account(){
 
     }
-    // Constructor
+    // Constructor 1
     public Account(int id, String item, int value){
         this._id=id;
         this._item=item;
         this._value=_value;
     }
 
-    //constructor
+    //constructor 2
     public Account(String item, int value){
         this._item=item;
         this._value=_value;

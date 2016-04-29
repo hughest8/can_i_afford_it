@@ -58,7 +58,7 @@ public class AddMoneyOut extends AppCompatActivity {
 
 
     public void takethefunds(View view) {
-            //fun stuff before the data read write
+            //Please see the addmoneyin activity for more details
 
             //int anID = Integer.parseInt(idText.getText().toString());
             String aItem= editText.getText().toString();
@@ -90,7 +90,7 @@ public class AddMoneyOut extends AppCompatActivity {
                     inputStream.close();
                     money=stringBuilder.toString();
                     moneyint= Integer.parseInt(money);
-                    aValue= moneyint-aValue;
+                    aValue= moneyint-aValue; //deducts the user variable from the file variable
                     tempval = String.valueOf(aValue);
 
 

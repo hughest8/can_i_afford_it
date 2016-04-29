@@ -27,6 +27,7 @@ public class CanIAffordIt extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //prepares the variables before the file is read
         file= new File(this.getFilesDir(),fileName);
 
 
@@ -46,6 +47,7 @@ public class CanIAffordIt extends AppCompatActivity {
         editText3=(EditText) findViewById(R.id.editText3);
     }
     public void caniaffordit(View view) {
+        //reads the data from the file. Please see the splash page file for more details
 
         String affordhold =editText3.getText().toString();
         int canAfford= Integer.parseInt(affordhold);
@@ -69,12 +71,12 @@ public class CanIAffordIt extends AppCompatActivity {
                 int moneyint= Integer.parseInt(money);
 
 
-                if(canAfford<moneyint){
+                if(canAfford<moneyint){ //checks if the file variable is greater than the user entered variable
                     TextView confirmer=(TextView) findViewById(R.id.confirmer);
-                    confirmer.setText("Yes you can!");
+                    confirmer.setText("Yes you can!"); //displayed if true
                 }else{
                     TextView confirmer=(TextView) findViewById(R.id.confirmer);
-                    confirmer.setText("No you can't!");
+                    confirmer.setText("No you can't!"); //displayed if false
                 }
 
 
