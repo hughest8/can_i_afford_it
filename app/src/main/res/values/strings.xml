@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Can I Afford It</string>
+    <string name="title_activity_add_money_in">AddMoneyIn</string>
+    <string name="title_activity_add_money_out">AddMoneyOut</string>
+    <string name="title_activity_can_iafford_it">CanIAffordIt</string>
+    <string name="title_activity_yourbalance">Yourbalance</string>
+</resources>
